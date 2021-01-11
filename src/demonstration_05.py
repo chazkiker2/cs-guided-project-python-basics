@@ -12,7 +12,7 @@ Examples:
 """
 
 
-def sort_by_length(lst):
+def sort_by_length_nested_func(lst):
     # Your code here
     def find_len(string):
         return len(string)
@@ -21,7 +21,21 @@ def sort_by_length(lst):
     return lst
 
 
-print(sort_by_length(["a", "ccc", "dddd", "bb"]))
-print(sort_by_length(["apple", "pie", "shortcake"]))
-print(sort_by_length(["may", "april", "september", "august"]))
-print(sort_by_length([]))
+def sort_by_length_short(lst):
+    lst.sort(key=len)
+    return lst
+
+
+def sort_by_length_lambda(lst):
+    lst.sort(key=lambda string: len(string))
+    return lst
+
+
+def sort_by_length_immutable(lst):
+    return sorted(lst, key=len)
+
+
+print(sort_by_length_immutable(["a", "ccc", "dddd", "bb"]))
+print(sort_by_length_lambda(["apple", "pie", "shortcake"]))
+print(sort_by_length_lambda(["may", "april", "september", "august"]))
+print(sort_by_length_lambda([]))

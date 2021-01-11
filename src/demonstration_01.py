@@ -11,6 +11,12 @@ Examples:
 
 
 def addition(a, b):
+    """
+    solve a + b
+    :param a: number
+    :param b: number
+    :return: a + b
+    """
     # Your code here
     return a + b
 

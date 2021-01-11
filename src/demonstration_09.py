@@ -22,6 +22,24 @@ def mapping(letters):
     return new_dict
 
 
+def mapping_dict_comprehension(letters):
+    return {letter: letter.upper() for letter in letters}
+
+
 print(mapping(["p", "s"]))
-print(mapping(["a", "b", "c"]))
+print(mapping_dict_comprehension(["a", "b", "c"]))
 print(mapping(["a", "v", "y", "z"]))
+
+"""
+the following solutions are wrong
+"""
+# def mapping_odd(letters):
+#     caps = [let.upper() for let in letters.upper()]
+#     return letters, caps
+
+# def mapping_odd(letters):
+#     caps = letters.upper()
+#     return caps
+
+# def mapping_short_2(letters):
+#     return dict(letters, letters.upper())
