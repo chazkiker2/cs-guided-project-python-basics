@@ -12,6 +12,16 @@ Examples:
 Notes:
 - All of the letters in the input list will always be lowercase.
 """
+
+
 def mapping(letters):
     # Your code here
+    new_dict = {}
+    for letter in letters:
+        new_dict[letter] = letter.upper()
+    return new_dict
 
+
+print(mapping(["p", "s"]))
+print(mapping(["a", "b", "c"]))
+print(mapping(["a", "v", "y", "z"]))

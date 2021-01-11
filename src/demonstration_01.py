@@ -8,6 +8,13 @@ Examples:
 - addition(-3, -6) ➞ -9
 - addition(7, 3) ➞ 10
 """
+
+
 def addition(a, b):
     # Your code here
+    return a + b
 
+
+print(addition(3, 2))
+print(addition(-3, -6))
+print(addition(7, 3))
